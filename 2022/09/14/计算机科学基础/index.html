@@ -1,0 +1,325 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>计算机科学快速入门 | 一个小趴菜的成长记录</title><meta name="keywords" content="基础"><meta name="author" content="暴躁的猫咪"><meta name="copyright" content="暴躁的猫咪"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="电子计算机继电器哈弗马克一号是IBM在1944年为二战同盟国建造，用于“曼哈顿计划” 这台机器的“大脑”就是继电器——用电控制的机械开关，大概长这样     继电器有一个控制线路，用于控制电路的开关 它连接一个线圈，当电流流过线圈产生磁场吸引金属臂从而闭合电路 继电器就像一个水龙头，而控制线路就是龙头把手 水龙头控制水的流动，而继电器控制的是电子的流动   早期的继电器每秒能控制金属臂开合50次，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="计算机科学快速入门">
+<meta property="og:url" content="http://example.com/2022/09/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/index.html">
+<meta property="og:site_name" content="一个小趴菜的成长记录">
+<meta property="og:description" content="电子计算机继电器哈弗马克一号是IBM在1944年为二战同盟国建造，用于“曼哈顿计划” 这台机器的“大脑”就是继电器——用电控制的机械开关，大概长这样     继电器有一个控制线路，用于控制电路的开关 它连接一个线圈，当电流流过线圈产生磁场吸引金属臂从而闭合电路 继电器就像一个水龙头，而控制线路就是龙头把手 水龙头控制水的流动，而继电器控制的是电子的流动   早期的继电器每秒能控制金属臂开合50次，">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+<meta property="article:published_time" content="2022-09-13T16:30:52.000Z">
+<meta property="article:modified_time" content="2022-09-13T19:36:30.563Z">
+<meta property="article:author" content="暴躁的猫咪">
+<meta property="article:tag" content="基础">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2022/09/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '计算机科学快速入门',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-09-14 03:36:30'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">一个小趴菜的成长记录</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">计算机科学快速入门</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-09-13T16:30:52.000Z" title="Created 2022-09-14 00:30:52">2022-09-14</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-09-13T19:36:30.563Z" title="Updated 2022-09-14 03:36:30">2022-09-14</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="计算机科学快速入门"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="电子计算机"><a href="#电子计算机" class="headerlink" title="电子计算机"></a>电子计算机</h1><h1 id="继电器"><a href="#继电器" class="headerlink" title="继电器"></a>继电器</h1><p>哈弗马克一号是IBM在1944年为二战同盟国建造，用于“曼哈顿计划”</p>
+<p>这台机器的“大脑”就是继电器——用电控制的机械开关，大概长这样</p>
+<img src="/2022/09/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/image-20220913210352812.png" alt="image-20220913210352812" style="zoom: 25%;">
+
+
+
+<p>继电器有一个控制线路，用于控制电路的开关</p>
+<p>它连接一个线圈，当电流流过线圈产生磁场吸引金属臂从而闭合电路</p>
+<p>继电器就像一个水龙头，而控制线路就是龙头把手</p>
+<p>水龙头控制水的流动，而继电器控制的是电子的流动</p>
+<img src="/2022/09/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/image-20220913210906679.png" alt="image-20220913210906679" style="zoom:60%;">
+
+<p>早期的继电器每秒能控制金属臂开合50次，哈弗马克一号有3500个这样的继电器</p>
+<h1 id="热电子管"><a href="#热电子管" class="headerlink" title="热电子管"></a>热电子管</h1><p>将2个电极装在一个气密的玻璃灯泡内</p>
+<p>其中一个电极可以加热从而发射电子，即“热电子发射”，电子是带负电荷的</p>
+<img src="/2022/09/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/image-20220913212604216.png" alt="image-20220913212604216" style="zoom:50%;">
+
+<p>另一个电极吸引电子，使得电子进行流动即电流。</p>
+<p>但是这个电极只能带正电荷，如果带负电荷或中性电荷，那么电子则无法被吸引越过真空区，从而也就无法形成电流</p>
+<p>所以热电子管的电流只能单向流动，也就是最初的“二极管”</p>
+<img src="/2022/09/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/image-20220913212717962.png" alt="image-20220913212717962" style="zoom:40%;">
+
+
+
+<h1 id="三级真空管"><a href="#三级真空管" class="headerlink" title="三级真空管"></a>三级真空管</h1><p>热电子管能根据其中一个电极所带电荷的正负来实现电流的开闭</p>
+<p>科学家在热电子管的基础上增加了第3个电极，也就是控制电极。</p>
+<ul>
+<li>向控制电极施加正电荷，允许电子流动，形成闭合电路点亮灯泡</li>
+<li>向控制电极施加负电荷，会阻止电子流动，灯泡不会被点亮。</li>
+<li>每秒开闭数千次</li>
+</ul>
+<h2 id="疑问：既然可以控制向电极施加正电荷或负电荷，那么直接向二极管的第2个电极施加需要的电荷不行吗？为什么要引入第三个电极作为控制电极？"><a href="#疑问：既然可以控制向电极施加正电荷或负电荷，那么直接向二极管的第2个电极施加需要的电荷不行吗？为什么要引入第三个电极作为控制电极？" class="headerlink" title="疑问：既然可以控制向电极施加正电荷或负电荷，那么直接向二极管的第2个电极施加需要的电荷不行吗？为什么要引入第三个电极作为控制电极？"></a>疑问：既然可以控制向电极施加正电荷或负电荷，那么直接向二极管的第2个电极施加需要的电荷不行吗？为什么要引入第三个电极作为控制电极？</h2><p>视频中说需要的是一个“能开关电流的东西”，但是二极管本身就实现了这个功能啊</p>
+<p>可能需要的就是一个显性的、暴露出来的 “控制线路” ，所以才增加了一个控制电极吧…</p>
+<h1 id="晶体管"><a href="#晶体管" class="headerlink" title="晶体管"></a>晶体管</h1><ul>
+<li>和上面继电器或者电子管类似，也是一个开关，可以用控制线路控制电流的开或关</li>
+<li>电极之间有一种材料隔开他们，这种材料有时候导电有时候不导电，这种材料叫做半导体</li>
+<li>控制线连接到一个“门”电极，通过改变这个电极的电荷的正、负，从而控制半导体材料的导电性，进而控制了电流的开闭</li>
+<li>初代晶体管每秒可开闭上万次，比玻璃可靠、体积小</li>
+<li>如今的晶体管每秒可开闭上百万次，体积更小更加可靠</li>
+<li>用晶体管来表示输入和输出，那么控制线路就是输入，两个电极则是输出（1个晶体管的2个电极只会有1个输出）</li>
+</ul>
+<img src="/2022/09/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/image-20220913232012072.png" alt="image-20220913232012072" style="zoom:50%;">
+
+<h1 id="晶体管表示布尔值"><a href="#晶体管表示布尔值" class="headerlink" title="晶体管表示布尔值"></a>晶体管表示布尔值</h1><h2 id="真值表"><a href="#真值表" class="headerlink" title="真值表"></a>真值表</h2><p><img src="/2022/09/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/image-20220913234621710.png" alt="image-20220913234621710"></p>
+<h2 id="Ture"><a href="#Ture" class="headerlink" title="Ture"></a>Ture</h2><img src="/2022/09/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/image-20220913234704232.png" alt="image-20220913234704232" style="zoom:50%;">
+
+<h2 id="False"><a href="#False" class="headerlink" title="False"></a>False</h2><img src="/2022/09/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/image-20220913234732595.png" alt="image-20220913234732595" style="zoom:50%;">
+
+
+
+<h1 id="晶体管实现基础逻辑运算（逻辑门）"><a href="#晶体管实现基础逻辑运算（逻辑门）" class="headerlink" title="晶体管实现基础逻辑运算（逻辑门）"></a>晶体管实现基础逻辑运算（逻辑门）</h1><h2 id="NOT门（1个晶体管就能实现）"><a href="#NOT门（1个晶体管就能实现）" class="headerlink" title="NOT门（1个晶体管就能实现）"></a>NOT门（1个晶体管就能实现）</h2><h3 id="NOT表"><a href="#NOT表" class="headerlink" title="NOT表"></a>NOT表</h3><p><img src="/2022/09/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/image-20220914024952387.png" alt="image-20220914024952387"></p>
+<h3 id="晶体管图示"><a href="#晶体管图示" class="headerlink" title="晶体管图示"></a>晶体管图示</h3><p>假设电流从上往下流，优先接地，如果无法接地，那么向右上输出。</p>
+<p>控制线路控制中间的门，进而控制电流是否接地。</p>
+<img src="/2022/09/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/image-20220913234937643.png" alt="image-20220913234937643" style="zoom:25%;">
+
+<img src="/2022/09/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/image-20220913235331786.png" alt="image-20220913235331786" style="zoom:25%;">
+
+<h2 id="AND门（将2个晶体管串联）"><a href="#AND门（将2个晶体管串联）" class="headerlink" title="AND门（将2个晶体管串联）"></a>AND门（将2个晶体管串联）</h2><h3 id="AND表"><a href="#AND表" class="headerlink" title="AND表"></a>AND表</h3><img src="/2022/09/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/image-20220914025255867.png" alt="image-20220914025255867" style="zoom:50%;">
+
+<h3 id="晶体管图示（忽略表最后1行2个false的情况）"><a href="#晶体管图示（忽略表最后1行2个false的情况）" class="headerlink" title="晶体管图示（忽略表最后1行2个false的情况）"></a>晶体管图示（忽略表最后1行2个false的情况）</h3><img src="/2022/09/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/image-20220913235522340.png" alt="image-20220913235522340" style="zoom:25%;">
+
+<img src="/2022/09/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/image-20220913235559145.png" alt="image-20220913235559145" style="zoom:25%;">
+
+<img src="/2022/09/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/image-20220913235631997.png" alt="image-20220913235631997" style="zoom:25%;">
+
+<h2 id="OR（将2个晶体管并联）"><a href="#OR（将2个晶体管并联）" class="headerlink" title="OR（将2个晶体管并联）"></a>OR（将2个晶体管并联）</h2><h3 id="OR表"><a href="#OR表" class="headerlink" title="OR表"></a>OR表</h3><img src="/2022/09/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/image-20220914025704701.png" alt="image-20220914025704701" style="zoom:50%;">
+
+<h3 id="晶体管图示-1"><a href="#晶体管图示-1" class="headerlink" title="晶体管图示"></a>晶体管图示</h3><p>将2个晶体管并联，2个输入只要有其中1个为true则输出true</p>
+<img src="/2022/09/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/image-20220913235952748.png" alt="image-20220913235952748" style="zoom:25%;">
+
+<h2 id="XOR（异或运算，比较的是2个输入值是否相同）"><a href="#XOR（异或运算，比较的是2个输入值是否相同）" class="headerlink" title="XOR（异或运算，比较的是2个输入值是否相同）"></a>XOR（异或运算，比较的是2个输入值是否相同）</h2><p>使用上面的基础逻辑门来共同构成这歌异或运算的逻辑门</p>
+<img src="/2022/09/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/image-20220914001019868.png" alt="image-20220914001019868" style="zoom:25%;">
+
+<h3 id="XOR表"><a href="#XOR表" class="headerlink" title="XOR表"></a>XOR表</h3><img src="/2022/09/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/image-20220914025946609.png" alt="image-20220914025946609" style="zoom:25%;">
+
+<h3 id="逻辑门组合图示"><a href="#逻辑门组合图示" class="headerlink" title="逻辑门组合图示"></a>逻辑门组合图示</h3><img src="/2022/09/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/image-20220913234005476.png" alt="image-20220913234005476" style="zoom:30%;">
+
+<h2 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h2><img src="/2022/09/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/image-20220914001321447.png" alt="image-20220914001321447" style="zoom:50%;">
+
+<img src="/2022/09/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/image-20220914001424485.png" alt="image-20220914001424485" style="zoom:50%;">
+
+<p>可以这样理解</p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">John Green=true</span><br><span class="line"></span><br><span class="line">下午5点后=true</span><br><span class="line"></span><br><span class="line">周末=true or false=true</span><br><span class="line"></span><br><span class="line">在披萨店附近=true</span><br></pre></td></tr></table></figure>
+
+<p>那么 </p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">John Green and 下午5点后，结果1：true and true=true</span><br><span class="line"></span><br><span class="line">结果1 or周末，结果2: true or true=true</span><br><span class="line"></span><br><span class="line">结果2 and 在披萨店附近，结果3:true and true=true</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="进制"><a href="#进制" class="headerlink" title="进制"></a>进制</h1><h2 id="十进制"><a href="#十进制" class="headerlink" title="十进制"></a>十进制</h2><p>使用十进制数263这个数举例</p>
+<ul>
+<li>从10的0次幂开始依次往左数</li>
+<li>表格中的表头表示乘数，每个乘数比右边大10倍</li>
+<li>并且每列都有10个可能的数字（0～9）</li>
+<li>如果超过9，就要在下一列+1</li>
+</ul>
+<img src="/2022/09/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/image-20220914003055305.png" alt="image-20220914003055305" style="zoom:50%;">
+
+<h2 id="二进制"><a href="#二进制" class="headerlink" title="二进制"></a>二进制</h2><p>使用二进制数101举例</p>
+<ul>
+<li>从2的0次幂开始依次往左数</li>
+<li>二进制与十进制的区别就在于表头的乘数，每个乘数比右边大2倍</li>
+<li>以及每列仅有2个可能出现的数字（0、1）</li>
+<li>如果超过1，就要在下一列+1</li>
+<li>如果把二进制数101乘以对应的乘数，加起来就是十进制的5</li>
+</ul>
+<img src="/2022/09/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/image-20220914003839815.png" alt="image-20220914003839815" style="zoom:50%;">
+
+<h2 id="（比特bit）位"><a href="#（比特bit）位" class="headerlink" title="（比特bit）位"></a>（比特bit）位</h2><p>上面十进制和二进制表格中的列，就称为位</p>
+<p>8位二进制能表示的最大数字就是8位都为1加起来&#x3D;255，能表示2的8次方&#x3D;256个不同的值</p>
+<img src="/2022/09/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/image-20220914005155885.png" alt="image-20220914005155885" style="zoom: 25%;">
+
+<p>8位机、8位图像、8位音频意思是计算机里分块处理，每块是8位</p>
+<p>但是256个值不算多，所以8位游戏只能用256种颜色</p>
+<img src="/2022/09/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/image-20220914010137669.png" alt="image-20220914010137669" style="zoom:25%;">
+
+<h2 id="（byte）字节"><a href="#（byte）字节" class="headerlink" title="（byte）字节"></a>（byte）字节</h2><ul>
+<li>8位是非常基础的处理单位，每8个比特位称为1个字节</li>
+<li>所以1个字节&#x3D;8个比特位，如果有10个字节，意味着有80个比特位</li>
+<li>千字节（kb）、兆字节（mb）、千兆字节（gb）不同前缀代表不同的数量级</li>
+<li>1024（千）byte、1024<em>1024 （百万）byte、（十亿）1024</em>1024*1024 byte</li>
+<li>如今常见的计算机都是32和64位，32位能表示的最大数是43亿左右</li>
+</ul>
+<h3 id="正负数的表示"><a href="#正负数的表示" class="headerlink" title="正负数的表示"></a>正负数的表示</h3><p>一般使用第一位数字表示正负，0表示正，1表示负</p>
+<p>比如32位的数字，使用第一位来表示正负，剩下31位来表示数字（正20亿～负20亿）</p>
+<h1 id="浮点数"><a href="#浮点数" class="headerlink" title="浮点数"></a>浮点数</h1><p>计算机除了要处理正负整数数，还需要处理小数</p>
+<p>比如3.14或者12.88，因为小数点可以在数字之间浮动，所以称为“浮点数”</p>
+<p>有多种方式表示浮点数，最常见的是IEEE754标准，它使用类似科学技术法的方式来存十进制数</p>
+<p>例如625.9可以写成</p>
+<p>其中.6259称作有效位数，3称为指数</p>
+<img src="/2022/09/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/image-20220914013113352.png" alt="image-20220914013113352" style="zoom:50%;">
+
+<p>在32位浮点数中，第1位表示数字正负，接下来的8位表示指数，剩下的23位表示有效位数</p>
+<p><img src="/2022/09/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/image-20220914013210080.png" alt="image-20220914013210080"></p>
+<h1 id="如何用二进制数字表示文字或者其他符号？"><a href="#如何用二进制数字表示文字或者其他符号？" class="headerlink" title="如何用二进制数字表示文字或者其他符号？"></a>如何用二进制数字表示文字或者其他符号？</h1><h2 id="英文字母（7位ASCII码）"><a href="#英文字母（7位ASCII码）" class="headerlink" title="英文字母（7位ASCII码）"></a>英文字母（7位ASCII码）</h2><ul>
+<li>对于英语来说，26个英文字母组成了所有的单词，完全可以给26个字母编码</li>
+<li>最早使用5位序列来编码英文26个字母，2的5次幂能表示32个不同的值足够26个字母使用</li>
+<li>为了表示大小写和其他符号，又发明出了7位的ASCII码，能表示2的7次幂128个不同的值</li>
+</ul>
+<h2 id="兼容其他国家字母符号（8位拓展ASCII码）"><a href="#兼容其他国家字母符号（8位拓展ASCII码）" class="headerlink" title="兼容其他国家字母符号（8位拓展ASCII码）"></a>兼容其他国家字母符号（8位拓展ASCII码）</h2><ul>
+<li>为了表示超出英文字母的其他国家字母，又对ASCII码进行了拓展，由7位拓展为8位，能够存256个不同的值</li>
+</ul>
+<h2 id="兼容亚洲国家文字符号（16位Unicode码也称万国码）"><a href="#兼容亚洲国家文字符号（16位Unicode码也称万国码）" class="headerlink" title="兼容亚洲国家文字符号（16位Unicode码也称万国码）"></a>兼容亚洲国家文字符号（16位Unicode码也称万国码）</h2><ul>
+<li>由于亚洲国家，比如中国有成千上万个汉字，为了兼容，则统一了所有国家的字符编码</li>
+<li>16位的Unicode码有超过一百万个位置来表示不同的值</li>
+</ul>
+<h3 id="疑问：2的16次幂是65536，为什么能表示上百万个不同的值？"><a href="#疑问：2的16次幂是65536，为什么能表示上百万个不同的值？" class="headerlink" title="疑问：2的16次幂是65536，为什么能表示上百万个不同的值？"></a>疑问：2的16次幂是65536，为什么能表示上百万个不同的值？</h3><p>目前的Unicode码分为17组编排，每组称为一个平面，每个平面拥有16位所以加起来应该是2^16*17&#x3D;1114112</p>
+<h1 id="算数逻辑单元ALU"><a href="#算数逻辑单元ALU" class="headerlink" title="算数逻辑单元ALU"></a>算数逻辑单元ALU</h1><ul>
+<li>表示和存储数字是计算机重要的功能，但是计算才是计算机倍设计出来的最终目的，如何有意义的处理这些数字就是ALU的工作</li>
+<li>ALU有2个单元，1个算数单元和1个逻辑单元</li>
+<li>最著名的ALU是英特尔74181，也是第一个封装在单个芯片内的完整ALU</li>
+</ul>
+<h2 id="算数单元（ARITHMETIC-UNIT）"><a href="#算数单元（ARITHMETIC-UNIT）" class="headerlink" title="算数单元（ARITHMETIC UNIT）"></a>算数单元（ARITHMETIC UNIT）</h2><p>算数单元负责计算机里所有数字操作，比如加减法</p>
+<h3 id="如何把2个1位的数字相加（1bit位-1bit位的加法）"><a href="#如何把2个1位的数字相加（1bit位-1bit位的加法）" class="headerlink" title="如何把2个1位的数字相加（1bit位+1bit位的加法）"></a>如何把2个1位的数字相加（1bit位+1bit位的加法）</h3><p>我们可以用多个晶体管一个个进行拼接，把电路做出来，但是一旦计算变多，电路就会复杂的难以理解。</p>
+<p>所以与其用晶体管，不如使用更高级的抽象，逻辑门来做</p>
+<p>最简单的加法电路</p>
+<p>拿2个二进制数也就是2个bit（0或者1）加在一起，2个输入A和B，一个输出，这3个值都是单个bit（0或者1）</p>
+<p>一共有4种可能</p>
+<img src="/2022/09/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/image-20220914024005101.png" alt="image-20220914024005101" style="zoom:50%;">
+
+<p>在二进制中，1表示true，0表示false</p>
+<p>这3组输入和输出和异或运算XOR相同，所以可以把XOR逻辑门用作1位二进制的“加法器”</p>
+<img src="/2022/09/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/image-20220914024233373.png" alt="image-20220914024233373" style="zoom:50%;">
+
+<p>但是第4组输入组合1+1是个特例，在十进制中它等于2，但是在二进制中没有2，1+1的结果应该是10</p>
+<p>所以我们在XOR的基础上还要再加一列表示“进位”，像这样</p>
+<img src="/2022/09/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/image-20220914030845724.png" alt="image-20220914030845724" style="zoom:50%;">
+
+<p>只有输入输入1和1的时候，进位才是true，这时最终的结果多了一个进位，所以用1个（比特bit）位存不下了</p>
+<p>那么如何用逻辑门组合来获取这张加法器的表呢？</p>
+<p>用异或XOR的计算结果表示总和（sum）位，用AND的结算结果表示进位（carry）即可！</p>
+<h3 id="半加器"><a href="#半加器" class="headerlink" title="半加器"></a>半加器</h3><p>这个电路叫做“半加器”</p>
+<img src="/2022/09/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/image-20220914031257503.png" alt="image-20220914031257503" style="zoom:50%;">
+
+<p>封装为半加器电路</p>
+<img src="/2022/09/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/image-20220914031649658.png" alt="image-20220914031649658" style="zoom:50%;">
+
+<h3 id="如何计算超过1比特位数字的加法？"><a href="#如何计算超过1比特位数字的加法？" class="headerlink" title="如何计算超过1比特位数字的加法？"></a>如何计算超过1比特位数字的加法？</h3><p>比如计算二进制101加101时，由于存在进位，我们需要将从第2列开始后的每一列的3个位加在一起</p>
+<img src="/2022/09/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/image-20220914032553300.png" alt="image-20220914032553300" style="zoom:50%;">
+
+<img src="/2022/09/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/image-20220914032849091.png" alt="image-20220914032849091" style="zoom:50%;"></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="http://example.com">暴躁的猫咪</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://example.com/2022/09/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/">http://example.com/2022/09/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%9F%BA%E7%A1%80/">基础</a></div><div class="post_share"><div class="social-share" data-image="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2022/09/04/%E5%9F%BA%E4%BA%8Ehugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"><img class="next-cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">基于hugo搭建个人博客</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">暴躁的猫咪</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%94%B5%E5%AD%90%E8%AE%A1%E7%AE%97%E6%9C%BA"><span class="toc-number">1.</span> <span class="toc-text">电子计算机</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BB%A7%E7%94%B5%E5%99%A8"><span class="toc-number">2.</span> <span class="toc-text">继电器</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%83%AD%E7%94%B5%E5%AD%90%E7%AE%A1"><span class="toc-number">3.</span> <span class="toc-text">热电子管</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%89%E7%BA%A7%E7%9C%9F%E7%A9%BA%E7%AE%A1"><span class="toc-number">4.</span> <span class="toc-text">三级真空管</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%96%91%E9%97%AE%EF%BC%9A%E6%97%A2%E7%84%B6%E5%8F%AF%E4%BB%A5%E6%8E%A7%E5%88%B6%E5%90%91%E7%94%B5%E6%9E%81%E6%96%BD%E5%8A%A0%E6%AD%A3%E7%94%B5%E8%8D%B7%E6%88%96%E8%B4%9F%E7%94%B5%E8%8D%B7%EF%BC%8C%E9%82%A3%E4%B9%88%E7%9B%B4%E6%8E%A5%E5%90%91%E4%BA%8C%E6%9E%81%E7%AE%A1%E7%9A%84%E7%AC%AC2%E4%B8%AA%E7%94%B5%E6%9E%81%E6%96%BD%E5%8A%A0%E9%9C%80%E8%A6%81%E7%9A%84%E7%94%B5%E8%8D%B7%E4%B8%8D%E8%A1%8C%E5%90%97%EF%BC%9F%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%BC%95%E5%85%A5%E7%AC%AC%E4%B8%89%E4%B8%AA%E7%94%B5%E6%9E%81%E4%BD%9C%E4%B8%BA%E6%8E%A7%E5%88%B6%E7%94%B5%E6%9E%81%EF%BC%9F"><span class="toc-number">4.1.</span> <span class="toc-text">疑问：既然可以控制向电极施加正电荷或负电荷，那么直接向二极管的第2个电极施加需要的电荷不行吗？为什么要引入第三个电极作为控制电极？</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%99%B6%E4%BD%93%E7%AE%A1"><span class="toc-number">5.</span> <span class="toc-text">晶体管</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%99%B6%E4%BD%93%E7%AE%A1%E8%A1%A8%E7%A4%BA%E5%B8%83%E5%B0%94%E5%80%BC"><span class="toc-number">6.</span> <span class="toc-text">晶体管表示布尔值</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9C%9F%E5%80%BC%E8%A1%A8"><span class="toc-number">6.1.</span> <span class="toc-text">真值表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Ture"><span class="toc-number">6.2.</span> <span class="toc-text">Ture</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#False"><span class="toc-number">6.3.</span> <span class="toc-text">False</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%99%B6%E4%BD%93%E7%AE%A1%E5%AE%9E%E7%8E%B0%E5%9F%BA%E7%A1%80%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%EF%BC%88%E9%80%BB%E8%BE%91%E9%97%A8%EF%BC%89"><span class="toc-number">7.</span> <span class="toc-text">晶体管实现基础逻辑运算（逻辑门）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#NOT%E9%97%A8%EF%BC%881%E4%B8%AA%E6%99%B6%E4%BD%93%E7%AE%A1%E5%B0%B1%E8%83%BD%E5%AE%9E%E7%8E%B0%EF%BC%89"><span class="toc-number">7.1.</span> <span class="toc-text">NOT门（1个晶体管就能实现）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#NOT%E8%A1%A8"><span class="toc-number">7.1.1.</span> <span class="toc-text">NOT表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%99%B6%E4%BD%93%E7%AE%A1%E5%9B%BE%E7%A4%BA"><span class="toc-number">7.1.2.</span> <span class="toc-text">晶体管图示</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#AND%E9%97%A8%EF%BC%88%E5%B0%862%E4%B8%AA%E6%99%B6%E4%BD%93%E7%AE%A1%E4%B8%B2%E8%81%94%EF%BC%89"><span class="toc-number">7.2.</span> <span class="toc-text">AND门（将2个晶体管串联）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#AND%E8%A1%A8"><span class="toc-number">7.2.1.</span> <span class="toc-text">AND表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%99%B6%E4%BD%93%E7%AE%A1%E5%9B%BE%E7%A4%BA%EF%BC%88%E5%BF%BD%E7%95%A5%E8%A1%A8%E6%9C%80%E5%90%8E1%E8%A1%8C2%E4%B8%AAfalse%E7%9A%84%E6%83%85%E5%86%B5%EF%BC%89"><span class="toc-number">7.2.2.</span> <span class="toc-text">晶体管图示（忽略表最后1行2个false的情况）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#OR%EF%BC%88%E5%B0%862%E4%B8%AA%E6%99%B6%E4%BD%93%E7%AE%A1%E5%B9%B6%E8%81%94%EF%BC%89"><span class="toc-number">7.3.</span> <span class="toc-text">OR（将2个晶体管并联）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#OR%E8%A1%A8"><span class="toc-number">7.3.1.</span> <span class="toc-text">OR表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%99%B6%E4%BD%93%E7%AE%A1%E5%9B%BE%E7%A4%BA-1"><span class="toc-number">7.3.2.</span> <span class="toc-text">晶体管图示</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#XOR%EF%BC%88%E5%BC%82%E6%88%96%E8%BF%90%E7%AE%97%EF%BC%8C%E6%AF%94%E8%BE%83%E7%9A%84%E6%98%AF2%E4%B8%AA%E8%BE%93%E5%85%A5%E5%80%BC%E6%98%AF%E5%90%A6%E7%9B%B8%E5%90%8C%EF%BC%89"><span class="toc-number">7.4.</span> <span class="toc-text">XOR（异或运算，比较的是2个输入值是否相同）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#XOR%E8%A1%A8"><span class="toc-number">7.4.1.</span> <span class="toc-text">XOR表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%BB%E8%BE%91%E9%97%A8%E7%BB%84%E5%90%88%E5%9B%BE%E7%A4%BA"><span class="toc-number">7.4.2.</span> <span class="toc-text">逻辑门组合图示</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BE%E4%BE%8B"><span class="toc-number">7.5.</span> <span class="toc-text">举例</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BF%9B%E5%88%B6"><span class="toc-number">8.</span> <span class="toc-text">进制</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%81%E8%BF%9B%E5%88%B6"><span class="toc-number">8.1.</span> <span class="toc-text">十进制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E8%BF%9B%E5%88%B6"><span class="toc-number">8.2.</span> <span class="toc-text">二进制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EF%BC%88%E6%AF%94%E7%89%B9bit%EF%BC%89%E4%BD%8D"><span class="toc-number">8.3.</span> <span class="toc-text">（比特bit）位</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EF%BC%88byte%EF%BC%89%E5%AD%97%E8%8A%82"><span class="toc-number">8.4.</span> <span class="toc-text">（byte）字节</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AD%A3%E8%B4%9F%E6%95%B0%E7%9A%84%E8%A1%A8%E7%A4%BA"><span class="toc-number">8.4.1.</span> <span class="toc-text">正负数的表示</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B5%AE%E7%82%B9%E6%95%B0"><span class="toc-number">9.</span> <span class="toc-text">浮点数</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E7%94%A8%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%95%B0%E5%AD%97%E8%A1%A8%E7%A4%BA%E6%96%87%E5%AD%97%E6%88%96%E8%80%85%E5%85%B6%E4%BB%96%E7%AC%A6%E5%8F%B7%EF%BC%9F"><span class="toc-number">10.</span> <span class="toc-text">如何用二进制数字表示文字或者其他符号？</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%8B%B1%E6%96%87%E5%AD%97%E6%AF%8D%EF%BC%887%E4%BD%8DASCII%E7%A0%81%EF%BC%89"><span class="toc-number">10.1.</span> <span class="toc-text">英文字母（7位ASCII码）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%BC%E5%AE%B9%E5%85%B6%E4%BB%96%E5%9B%BD%E5%AE%B6%E5%AD%97%E6%AF%8D%E7%AC%A6%E5%8F%B7%EF%BC%888%E4%BD%8D%E6%8B%93%E5%B1%95ASCII%E7%A0%81%EF%BC%89"><span class="toc-number">10.2.</span> <span class="toc-text">兼容其他国家字母符号（8位拓展ASCII码）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%BC%E5%AE%B9%E4%BA%9A%E6%B4%B2%E5%9B%BD%E5%AE%B6%E6%96%87%E5%AD%97%E7%AC%A6%E5%8F%B7%EF%BC%8816%E4%BD%8DUnicode%E7%A0%81%E4%B9%9F%E7%A7%B0%E4%B8%87%E5%9B%BD%E7%A0%81%EF%BC%89"><span class="toc-number">10.3.</span> <span class="toc-text">兼容亚洲国家文字符号（16位Unicode码也称万国码）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%96%91%E9%97%AE%EF%BC%9A2%E7%9A%8416%E6%AC%A1%E5%B9%82%E6%98%AF65536%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E8%83%BD%E8%A1%A8%E7%A4%BA%E4%B8%8A%E7%99%BE%E4%B8%87%E4%B8%AA%E4%B8%8D%E5%90%8C%E7%9A%84%E5%80%BC%EF%BC%9F"><span class="toc-number">10.3.1.</span> <span class="toc-text">疑问：2的16次幂是65536，为什么能表示上百万个不同的值？</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AE%97%E6%95%B0%E9%80%BB%E8%BE%91%E5%8D%95%E5%85%83ALU"><span class="toc-number">11.</span> <span class="toc-text">算数逻辑单元ALU</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%97%E6%95%B0%E5%8D%95%E5%85%83%EF%BC%88ARITHMETIC-UNIT%EF%BC%89"><span class="toc-number">11.1.</span> <span class="toc-text">算数单元（ARITHMETIC UNIT）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E6%8A%8A2%E4%B8%AA1%E4%BD%8D%E7%9A%84%E6%95%B0%E5%AD%97%E7%9B%B8%E5%8A%A0%EF%BC%881bit%E4%BD%8D-1bit%E4%BD%8D%E7%9A%84%E5%8A%A0%E6%B3%95%EF%BC%89"><span class="toc-number">11.1.1.</span> <span class="toc-text">如何把2个1位的数字相加（1bit位+1bit位的加法）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%8A%E5%8A%A0%E5%99%A8"><span class="toc-number">11.1.2.</span> <span class="toc-text">半加器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E8%AE%A1%E7%AE%97%E8%B6%85%E8%BF%871%E6%AF%94%E7%89%B9%E4%BD%8D%E6%95%B0%E5%AD%97%E7%9A%84%E5%8A%A0%E6%B3%95%EF%BC%9F"><span class="toc-number">11.1.3.</span> <span class="toc-text">如何计算超过1比特位数字的加法？</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/09/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/" title="计算机科学快速入门"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="计算机科学快速入门"/></a><div class="content"><a class="title" href="/2022/09/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%9F%BA%E7%A1%80/" title="计算机科学快速入门">计算机科学快速入门</a><time datetime="2022-09-13T16:30:52.000Z" title="Created 2022-09-14 00:30:52">2022-09-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/09/04/%E5%9F%BA%E4%BA%8Ehugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" title="基于hugo搭建个人博客"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="基于hugo搭建个人博客"/></a><div class="content"><a class="title" href="/2022/09/04/%E5%9F%BA%E4%BA%8Ehugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" title="基于hugo搭建个人博客">基于hugo搭建个人博客</a><time datetime="2022-09-03T18:40:52.000Z" title="Created 2022-09-04 02:40:52">2022-09-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/09/03/%E5%9F%BA%E4%BA%8Ehexo%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" title="基于hexo从零开始搭建个人博客"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="基于hexo从零开始搭建个人博客"/></a><div class="content"><a class="title" href="/2022/09/03/%E5%9F%BA%E4%BA%8Ehexo%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" title="基于hexo从零开始搭建个人博客">基于hexo从零开始搭建个人博客</a><time datetime="2022-09-02T16:43:52.000Z" title="Created 2022-09-03 00:43:52">2022-09-03</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By 暴躁的猫咪</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
